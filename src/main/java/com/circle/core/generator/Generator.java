@@ -26,8 +26,8 @@ public class Generator {
      */
     private String url = "jdbc:oracle:thin:@localhost:1521:orcl";
     private String driverName = "oracle.jdbc.driver.OracleDriver";
-    private String userName = "expense";
-    private String password = "expense";
+    private String userName = "CIRCLE";
+    private String password = "CIRCLE";
 
     public static String scanner(String tip,String messages) {
         Scanner scanner = new Scanner(System.in);
@@ -127,7 +127,7 @@ public class Generator {
     }
 
     public static void main(String[] args) {
-        new Generator("jdbc:oracle:thin:@localhost:1521:orcl","oracle.jdbc.driver.OracleDriver","expense","expense").generate();
+        new Generator().generate();
     }
 
 }
